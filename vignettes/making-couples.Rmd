@@ -1,0 +1,39 @@
+---
+title: "making-couples"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{making-couples}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(mysterycoffee)
+```
+
+Here is an example how to use the functions in this package
+
+```{r example}
+## Get couples from a vector of names
+make_groups(starwars_coffee_people)
+
+## Assign to a variable
+couples <- make_groups(starwars_coffee_people)
+
+## Get couples with meeting time
+couples <- make_groups_by_time(starwars_coffee_people)
+
+## Get initials of a name
+return_initials(starwars_coffee_people[1])
+
+## Get initials of a couple
+make_couple_initials(starwars_coffee_people[1], starwars_coffee_people[2])
+
+```
