@@ -11,7 +11,7 @@ The goal of mysterycoffee is to make couples from a group of people names with s
 You can install the development version of mysterycoffee like so:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+devtools::install_github("z-kurkcuoglusoner/mysterycoffee",build_vignettes=TRUE)
 ```
 
 ## Example
